@@ -36,6 +36,7 @@ function Contact() {
   return (
     <Element name="contact" className="section contact-section">
        <h2>Get In Touch</h2>
+       <p className="message">Have a question or want to work together? Feel free to reach out!</p>
 
       <form ref={form} onSubmit={sendEmail} className="contact-form">
 
