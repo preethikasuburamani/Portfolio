@@ -1,0 +1,22 @@
+.footer-box{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.social-link a{
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.social-link a :hover{
+    color: gray;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-box {
+    display: inline;
+    text-align: center;
+  }
+}

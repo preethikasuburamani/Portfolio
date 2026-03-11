@@ -1,0 +1,101 @@
+/* Projects.css */
+
+.projects-section {
+  padding: 4rem 2rem;
+  background-color: #0f172a; /* dark background */
+  color: #f8fafc; /* light text */
+  text-align: center;
+}
+
+.projects-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.project {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+/* Each project card */
+.project > div {
+  background-color: #1e293b; /* dark card background */
+  border-radius: 1rem;
+  padding: 1.5rem;
+  flex: 1 1 300px;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project > div:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Project title */
+.project > div h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #f8fafc;
+}
+
+/* Tech stack */
+.project > div p:first-of-type {
+  font-weight: 500;
+  color: #60a5fa; /* light blue for tech stack */
+  margin-bottom: 0.5rem;
+}
+
+/* Description */
+.project > div p:nth-of-type(2) {
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+
+/* Links */
+.links{
+    display: flex;
+    justify-content: space-between;
+}
+.gitlink,
+.livelink {
+  display: flex;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  margin-right: 0.5rem;
+  font-weight: 500;
+  transition: background 0.3s;
+  color: #f8fafc;
+}
+
+.gitlink {
+  padding: 10px 30xp;
+  background-color: #334155; 
+}
+
+.gitlink:hover {
+  background-color: #475569;
+}
+
+.livelink {
+  background-color: #3b82f6; /* blue */
+}
+
+.livelink:hover {
+  background-color: #2563eb;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .project {
+    flex-direction: column;
+    align-items: center;
+  }
+}

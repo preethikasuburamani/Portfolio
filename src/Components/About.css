@@ -1,0 +1,118 @@
+/* About Section */ 
+.about-section {
+  padding: 80px 10%;
+  text-align: center;
+}
+
+/* Heading */
+.about-section h2 {
+  font-size: 36px;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+/* Optional underline for heading */
+.about-section h2::after {
+  content: "";
+  width: 70px;
+  height: 4px;
+  display: block;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+/* Paragraph */
+.about-section p {
+  max-width: 750px;
+  margin: auto;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+/* Main About Container */
+
+/* My Journey Section */
+.about-me {
+  padding: 60px 10%;
+  text-align: center;
+}
+
+.about-me h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+
+}
+
+.about-me p {
+  max-width: 750px;
+  margin: auto;
+  font-size: 17px;
+  line-height: 1.7;
+  
+}
+
+/* Experience + Education Layout */
+.Exp-Edu {
+  padding: 60px 10%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+
+/* Section Headings */
+.Experience h1,
+.Education h1 {
+  font-size: 26px;
+  margin-bottom: 25px;
+
+}
+
+/* Cards inside sections */
+.Experience div,
+.qualification {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+  color: black;
+  font-weight: bolder;
+}
+
+/* Title */
+.title {
+  font-weight: 600;
+  font-size: 17px;
+  color:#031f67;
+
+}
+
+/* Company / University */
+.company {
+  font-size: 15px;
+  margin-top: 5px;
+}
+
+/* Year */
+.year {
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+/* Education headings */
+.qualification h1 {
+  font-size: 18px;
+  margin-bottom: 5px;
+  color:  #031f67;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .Exp-Edu {
+    grid-template-columns: 1fr;
+  }
+
+  .about-me h1 {
+    font-size: 26px;
+  }
+}

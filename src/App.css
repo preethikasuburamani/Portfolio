@@ -1,0 +1,68 @@
+/* App.css */
+
+body, html {
+  margin: 0px;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  scroll-behavior: smooth;
+
+}
+.App{
+  background-color: #0f172a;
+  color: white;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background:  #0f172a;
+  padding: 10px 20px;
+  z-index: 1000;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links{
+padding-right: 50px;
+}
+.nav-links a {
+  color: white;
+  margin-left: 30px;
+  text-decoration: none;
+  cursor: pointer;
+
+}
+
+.nav-links a:hover {
+  color: #00bcd4;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-container {
+    display: inline;
+    text-align: center;
+  }
+
+  .nav-links {
+    margin-right:20px ;
+    padding-right: 10px;
+  }
+  .nav-links a{
+    margin-left: 10px;
+  }
+}

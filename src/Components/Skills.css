@@ -1,0 +1,75 @@
+/* Skills Section */
+.skills-section {
+  padding: 80px 10%;
+  text-align: center;
+}
+
+/* Main Heading */
+.skills-section h2 {
+  font-size: 36px;
+  margin-bottom: 50px;
+}
+
+/* Grid for skill cards */
+.frontEnd,
+.framework,
+.others,
+.technical {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.08);
+}
+
+/* Container grid layout */
+.skills-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+/* Keep heading full width */
+.skills-section h2 {
+  grid-column: span 2;
+}
+
+/* Card Titles */
+.frontEnd h1,
+.framework h1,
+.others h1,
+.technical h1 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color:#031f67;
+}
+
+/* Skill Text */
+.frontEnd h3,
+.framework h3,
+.others h3,
+.technical h3 {
+  font-size: 16px;
+  color:black;
+  font-weight: bolder;
+  line-height: 1.6;
+}
+
+/* Hover effect */
+.frontEnd:hover,
+.framework:hover,
+.others:hover,
+.technical:hover {
+  transform: translateY(-5px);
+  transition: 0.3s;
+}
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+  .skills-section {
+    grid-template-columns: 1fr;
+  }
+
+  .skills-section h2 {
+    grid-column: span 1;
+  }
+}

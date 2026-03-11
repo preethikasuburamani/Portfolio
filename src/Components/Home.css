@@ -1,0 +1,80 @@
+/* Home Section */
+.home-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100px 10%;
+  background-color:#01B586;
+  flex-wrap: wrap;
+}
+
+/* Text Content */
+.home-content {
+  max-width: 550px;
+}
+
+.home-content h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.home-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.home-content p {
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+/* Button */
+.work {
+  padding: 12px 28px;
+  border: none;
+  border-radius: 6px;
+  background-color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.work:hover {
+  background-color: #475569;
+  transform: translateY(-2px);
+}
+
+/* Profile Image */
+.profile-pic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-pic img {
+  width: 320px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 6px solid  #475569;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .home-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .home-content {
+    margin-bottom: 40px;
+  }
+
+  .profile-pic img {
+    width: 250px;
+    height: 250px;
+  }
+}
