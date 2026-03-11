@@ -18,7 +18,7 @@ function Home() {
     <Element name="home" className="section home-section">
       <div className="home-content">
         <h1>Hello, I'm Preethika</h1>
-        <h3>Junior Web Developer | React & Frontend Developer</h3>
+        <h3>Junior Web Developer | Front End Developer</h3>
 
         <p>Front-End Developer focused on building responsive and user-friendly web interfaces. 
         Skilled in modern web technologies and passionate 

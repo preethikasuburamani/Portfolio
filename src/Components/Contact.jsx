@@ -43,20 +43,20 @@ function Contact() {
         <input
           type="text"
           name="user_name"
-          placeholder="Your Name"
+          placeholder="Name"
           required
         />
 
         <input
           type="email"
           name="user_email"
-          placeholder="Your Email"
+          placeholder="Email"
           required
         />
 
         <textarea
           name="message"
-          placeholder="Your Message"
+          placeholder="Message"
           rows="5"
           required
         ></textarea>
