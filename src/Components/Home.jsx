@@ -29,7 +29,7 @@ function Home() {
       </div>
 
       <div className="profile-pic">
-        <img src="./public/image/ProfilePic.jpeg" alt="PIC OF PREETHIKA" />
+        <img src="./public/Image/ProfilePic.png" alt="PIC OF PREETHIKA" />
       </div>
     </Element>
   );
