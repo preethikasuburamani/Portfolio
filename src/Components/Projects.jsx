@@ -21,7 +21,7 @@ function Projects() {
           </p>
           <div className="links">
             <a href="https://github.com/preethikasuburamani/ShopHub" target="_blank" className="gitlink">Code</a>
-            <a href="https://shop-mgvxidzgy-preethikas-projects-749b9ea0.vercel.app/" target="_blank" className="livelink"> Live Demo</a>
+            <a href="https://shop-hub-lime.vercel.app/" target="_blank" className="livelink"> Live Demo</a>
           </div>
         </div>
 
