@@ -26,14 +26,14 @@ function Projects() {
         </div>
 
          <div>
-          <h2>Weather Reporter</h2>
-          <p>React, JS, Tailwind css</p>
-          <p>Developed a responsive weather application that retrieves real-time weather data using an external API and displays key information such as temperature and weather conditions. 
-            Demonstrates skills in API integration, JavaScript, and dynamic data rendering
+          <h2>Telecom Call Analysis</h2>
+          <p>React, JS, Tailwind css,shadcn, Recharts</p>
+          <p>Developed analytics dashboards to monitor these call records in order to:Track call activity, Analyze customer engagement
+             Monitor call success rates, Analyze call costs, Identify calling patterns
           </p>
           <div className="links">
-           <a href="https://github.com/preethikasuburamani/WeatherAPI" target="_blank" className="gitlink">code</a>
-            <a href="https://weather-api-five-virid.vercel.app/" target="_blank" className="livelink"> Live Demo</a>
+           <a href="https://github.com/preethikasuburamani/Telecom-Call-Dashboard" target="_blank" className="gitlink">code</a>
+            <a href="https://telecom-call-dashboard.vercel.app/" target="_blank" className="livelink"> Live Demo</a>
           </div>
         </div>
 
@@ -46,6 +46,18 @@ function Projects() {
           <div className="links">
             <a href="https://github.com/preethikasuburamani/TODOList" target="_blank" className="gitlink">Code</a>
             <a href="https://todo-list-silk-gamma-62.vercel.app/" target="_blank" className="livelink"> Live Demo</a>
+          </div>
+        </div>
+
+          <div>
+          <h2>Weather Reporter</h2>
+          <p>React, JS, Tailwind css</p>
+          <p>Developed a responsive weather application that retrieves real-time weather data using an external API and displays key information such as temperature and weather conditions. 
+            Demonstrates skills in API integration, JavaScript, and dynamic data rendering
+          </p>
+          <div className="links">
+           <a href="https://github.com/preethikasuburamani/WeatherAPI" target="_blank" className="gitlink">code</a>
+            <a href="https://weather-api-five-virid.vercel.app/" target="_blank" className="livelink"> Live Demo</a>
           </div>
         </div>
 
