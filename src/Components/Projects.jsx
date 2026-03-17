@@ -36,6 +36,7 @@ function Projects() {
             <a href="https://telecom-call-dashboard.vercel.app/" target="_blank" className="livelink"> Live Demo</a>
           </div>
         </div>
+        
 
         <div>
           <h2>TODO Lsit</h2>
@@ -48,6 +49,20 @@ function Projects() {
             <a href="https://todo-list-silk-gamma-62.vercel.app/" target="_blank" className="livelink"> Live Demo</a>
           </div>
         </div>
+
+        <div>
+          <h2>NOVA static web application</h2>
+          <p>React, JS, Tailwind css</p>
+          <p>This website serves as a personal portfolio to showcase my skills in web design and development.
+             I specialize in crafting captivating online experiences that balance form and function. 
+             The site is designed to be sleek and professional, using a dark theme to create a modern, high-contrast look.
+          </p>
+          <div className="links">
+           <a href="https://github.com/preethikasuburamani/Black-and-White-responsive-cross-browser-compatible-interfaces" target="_blank" className="gitlink">code</a>
+            <a href="https://preethikasuburamani.github.io/Black-and-White-responsive-cross-browser-compatible-interfaces/index.html" target="_blank" className="livelink"> Live Demo</a>
+          </div>
+        </div>
+
 
           <div>
           <h2>Weather Reporter</h2>
