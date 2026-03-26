@@ -1,16 +1,44 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Portfolio
 
-Currently, two official plugins are available:
+A personal portfolio website to showcase my projects, skills, and work in a clean and responsive layout.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Project Description
 
-## React Compiler
+This portfolio highlights my work, technical skills, and projects in one place. It is designed to give a quick overview of who I am and what I build, with a focus on simple design and smooth user experience.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Live Link
+Link:https://portfolio-rose-xi-85.vercel.app/
 
-## Expanding the ESLint configuration
+## Screenshots
+<img width="1895" height="931" alt="Screenshot (370)" src="https://github.com/user-attachments/assets/a4842d54-7242-4193-b269-496b7f0398be" />
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+## Tech Stack
+* HTML
+* CSS
+* JavaScript
+* React +Vite
+
+## Key Features
+
+* Clean and responsive design
+* Project showcase section
+* About & contact sections
+* Smooth navigation
+
+## Getting Started
+
+1. Clone the repository
+   git clone https://github.com/preethikasuburamani/Portfolio.git
+2. Navigate to the folder
+   cd Portfolio
+3. Open `index.html` in your browser
+
+## Contact
+LinkedIn: https://www.linkedin.com/in/preethika-subramani/
+
+---
+
+Simple portfolio to present my work and skills.
