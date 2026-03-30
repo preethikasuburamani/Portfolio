@@ -21,7 +21,7 @@ function Skills() {
 
       <div className="others">
         <h1>Version control / API</h1>
-        <h3>Git, GitHub, ReatAPI, JSON, Postman, CRUD</h3>
+        <h3>Git, GitHub, RestAPI, JSON, Postman, CRUD</h3>
       </div>
 
       <div className="technical">
