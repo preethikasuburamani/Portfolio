@@ -46,20 +46,21 @@
   transform: translateY(-2px);
 }
 
-/* Profile Image */
-.profile-pic {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
+/* Profile image */
 .profile-pic img {
   width: 320px;
-  height: 320px;
-  object-fit: cover;
+  height:320px;
   border-radius: 50%;
   border: 6px solid  #475569;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  animation: float 4s ease-in-out infinite;
+  box-shadow: 0 0 40px rgba(56,189,248,0.3);
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0px); }
 }
 
 /* Responsive */
