@@ -4,6 +4,8 @@ import { Element } from "react-scroll";
 import "../App.css";
 import "./Home.css"
 import { scroller } from "react-scroll";
+import { Link } from "react-scroll";
+
 function Home() {
   
 
@@ -14,6 +16,9 @@ function Home() {
       duration:500
     });
   }
+
+
+
   return (
     <Element name="home" className="section home-section">
       <div className="home-content">
@@ -25,6 +30,8 @@ function Home() {
         about creating smooth digital experiences.</p>
 
         <button className="work"  onClick={HandelViewWork}>View my Work </button>
+
+        <button className="work"><a href="/CV/Preethika Subramani -FrontEnd Developer-CV.pdf" target="_blank" rel="noopener noreferrer">View CV</a></button>
        
       </div>
 

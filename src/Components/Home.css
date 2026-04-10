@@ -39,8 +39,12 @@
   font-size: 1rem;
   cursor: pointer;
   transition: all 0.3s ease;
+  margin: 10px;
 }
-
+.work a{
+  text-decoration: none;
+  color: black;
+}
 .work:hover {
   background-color: #475569;
   transform: translateY(-2px);
