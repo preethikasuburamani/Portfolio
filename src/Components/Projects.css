@@ -76,7 +76,7 @@
 }
 
 .gitlink {
-  padding: 10px 30xp;
+  padding: 10px 30px;
   background-color: #334155; 
 }
 
@@ -101,7 +101,7 @@
   padding: 20px;
   border-radius: 16px;
   transition: 0.4s;
-  transform-style: preserve-3d;
+  
 }
 
 .project > div:hover {
@@ -117,6 +117,7 @@
   background: linear-gradient(120deg, transparent, rgba(56,189,248,0.2), transparent);
   opacity: 0;
   transition: 0.4s;
+  pointer-events: none;
 }
 
 .project > div:hover::before {
