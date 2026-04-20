@@ -40,7 +40,7 @@ function Projects() {
 
         <div>
           <h2>TODO List</h2>
-          <p>React, JS, Tailwind css</p>
+          <p>React, JS, Sass</p>
           <p>Built a task management application that allows users to add, edit, and delete tasks with persistent state updates. 
             Showcases practical skills in DOM manipulation, event handling, and clean UI design using HTML, CSS, and JavaScript
           </p>
