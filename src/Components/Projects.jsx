@@ -14,6 +14,19 @@ function Projects() {
       <div className="project">
 
         <div>
+          <h2>Trackly [Job Tracker]</h2>
+          <p>React, TS, JS, SASS/SCSS, AI, Shadcn </p>
+          <p>AI-powered job tracker using React, TypeScript, and Shadcn UI with a responsive dashboard. 
+            Integrated Firebase for authentication and real-time data storage. 
+            Added LLM-based AI features to simplify and optimize job application management.
+          </p>
+          <div className="links">
+            <a href="https://github.com/preethikasuburamani/Trackly" target="_blank" className="gitlink">Code</a>
+            <a href="https://trackly-8qdfxnur7-preethikas-projects-749b9ea0.vercel.app/" target="_blank" className="livelink"> Live Demo</a>
+          </div>
+        </div>
+
+        <div>
           <h2>E-Commerce SHOPHUB</h2>
           <p>React, JS, CSS</p>
           <p>Developed a high-performance e-commerce interface with dynamic product 
@@ -27,7 +40,7 @@ function Projects() {
 
          <div>
           <h2>Telecom Call Analysis</h2>
-          <p>React, JS, Tailwind css,shadcn, Recharts</p>
+          <p>React, JS, Tailwind CSS,shadcn, Recharts</p>
           <p>Developed analytics dashboards to monitor these call records in order to:Track call activity, Analyze customer engagement
              Monitor call success rates, Analyze call costs, Identify calling patterns
           </p>

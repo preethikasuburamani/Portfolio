@@ -31,7 +31,7 @@ function Home() {
 
         <button className="work"  onClick={HandelViewWork}>View my Work </button>
 
-        <button className="work"><a href="/CV/Preethika Subramani -FrontEnd Developer-CV.pdf" target="_blank" rel="noopener noreferrer">View CV</a></button>
+        <button className="work"><a href="/CV/Resume.pdf" target="_blank" rel="noopener noreferrer">View CV</a></button>
        
       </div>
 

@@ -11,13 +11,13 @@ function Skills() {
       <h2>Skills</h2>
       <div className="frontEnd">
         <h1>  FrontEnd Development</h1>
-        <h3><span>JavaScript</span> <span>TypeScript</span> <span>SQL</span> <span>SQL</span>
-          <span>HTML5</span> <span>CSS3</span> <span>Python</span> </h3>
+        <h3> <span>React</span> <span>JavaScript</span> <span>TypeScript</span> <span>SASS/SCSS</span><span>SQL</span> <span>SQL</span>
+          <span>HTML5</span> <span>CSS3</span> <span>Python</span> <span>Wordpress</span> </h3>
       </div>
 
       <div className="framework">
         <h1> Framework</h1> 
-        <h3> <span>React</span> <span>Redux</span><span>TailWind css</span><span>Vite</span></h3>
+        <h3> <span>Redux</span><span>TailWind css</span><span>Vite</span></h3>
       </div>
 
       <div className="others">
