@@ -21,8 +21,8 @@ function Projects() {
             Added LLM-based AI features to simplify and optimize job application management.
           </p>
           <div className="links">
-            <a href="https://github.com/preethikasuburamani/Trackly" target="_blank" className="gitlink">Code</a>
-            <a href="https://trackly-8qdfxnur7-preethikas-projects-749b9ea0.vercel.app/" target="_blank" className="livelink"> Live Demo</a>
+            <a href="https://github.com/preethikasuburamani/AI-Powered-Job-Tracker" target="_blank" className="gitlink">Code</a>
+            <a href="https://ai-powered-job-tracker-fawn.vercel.app/" target="_blank" className="livelink"> Live Demo</a>
           </div>
         </div>
 
