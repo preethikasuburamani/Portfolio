@@ -1,120 +1,135 @@
-/* About Section */ 
 .about-section {
-  padding: 80px 10%;
-  text-align: center;
-}
-
-/* Heading */
-.about-section h2 {
-  font-size: 36px;
-  margin-bottom: 25px;
   position: relative;
 }
 
-/* Optional underline for heading */
-.about-section h2::after {
-  content: "";
-  width: 70px;
-  height: 4px;
-  display: block;
-  margin: 10px auto 0;
-  border-radius: 2px;
+.about-header {
+  margin-bottom: 60px;
 }
 
-/* Paragraph */
-.about-section p {
-  max-width: 750px;
-  margin: auto;
-  font-size: 18px;
-  line-height: 1.7;
-}
-
-/* Main About Container */
-
-/* My Journey Section */
-.about-me {
-  padding: 60px 10%;
-  text-align: center;
-}
-
-.about-me h1 {
-  font-size: 30px;
-  margin-bottom: 20px;
-
-}
-
-.about-me p {
-  max-width: 750px;
-  margin: auto;
-  font-size: 17px;
-  line-height: 1.7;
-  
-}
-
-/* Experience + Education Layout */
-.Exp-Edu {
-  padding: 60px 10%;
+.about-grid {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 50px;
-  text-align: center;
+  align-items: start;
 }
 
+.about-card {
+  padding: 35px;
 
-/* Section Headings */
-.Experience h1,
-.Education h1 {
-  font-size: 26px;
+  border: 1px solid var(--border);
+  border-radius: 15px;
+
+  background: rgba(15, 20, 30, 0.65);
+
+  transition: 0.35s ease;
+}
+
+.about-card:hover {
+  border-color: rgba(124, 92, 255, 0.3);
+  transform: translateY(-5px);
+}
+
+.card-heading {
+  display: flex;
+  align-items: center;
+  gap: 15px;
   margin-bottom: 25px;
-  text-align: center;
-
 }
 
-/* Cards inside sections */
-.Experience div,
-.qualification {
-  background: white;
-  padding: 20px;
-  border-radius: 8px;
-  margin-bottom: 20px;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
-  color: black;
-  font-weight: bolder;
+.heading-icon {
+  color: var(--accent-light);
+  font-size: 0.8rem;
+  font-weight: 700;
 }
 
-/* Title */
-.title {
+.card-heading h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.4rem;
+}
+
+.about-card p {
+  color: var(--text-secondary);
+  line-height: 1.8;
+  font-size: 0.92rem;
+  margin-bottom: 18px;
+}
+
+.about-card p:last-child {
+  margin-bottom: 0;
+}
+
+.timeline {
+  position: relative;
+  padding-left: 30px;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 8px;
+  bottom: 10px;
+
+  width: 1px;
+
+  background: linear-gradient(
+    to bottom,
+    var(--accent),
+    rgba(124, 92, 255, 0.05)
+  );
+}
+
+.timeline-item {
+  position: relative;
+  padding-bottom: 40px;
+}
+
+.timeline-dot {
+  position: absolute;
+
+  left: -30px;
+  top: 4px;
+
+  width: 10px;
+  height: 10px;
+
+  border-radius: 50%;
+
+  background: var(--accent);
+
+  box-shadow: 0 0 15px rgba(124, 92, 255, 0.5);
+}
+
+.timeline-date {
+  display: inline-block;
+
+  color: var(--accent-light);
+  font-size: 0.75rem;
   font-weight: 600;
-  font-size: 20px;
-  color:#031f67;
+
+  margin-bottom: 8px;
 }
 
-/* Company / University */
-.company {
-  font-size: 15px;
-  margin-top: 5px;
-}
-
-/* Year */
-.year {
-  font-size: 14px;
-  margin-top: 4px;
-}
-
-/* Education headings */
-.qualification h1 {
-  font-size: 18px;
+.timeline-item h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.15rem;
   margin-bottom: 5px;
-  color:  #031f67;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .Exp-Edu {
-    grid-template-columns: 1fr;
-  }
+.timeline-company {
+  color: white !important;
+  font-size: 0.85rem !important;
+  margin-bottom: 10px !important;
+}
 
-  .about-me h1 {
-    font-size: 26px;
+.timeline-item p {
+  color: var(--text-secondary);
+  line-height: 1.7;
+  font-size: 0.85rem;
+}
+
+@media (max-width: 800px) {
+  .about-grid {
+    grid-template-columns: 1fr;
   }
 }

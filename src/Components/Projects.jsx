@@ -1,287 +1,225 @@
 import React from "react";
 import { Element } from "react-scroll";
-import "../App.css";
 import "./Projects.css";
+
+const projects = [
+  // {
+  //   featured: true,
+  //   category: "AI / React / TypeScript",
+  //   title: "GRFI — AI Interview Practice Platform",
+  //   description:
+  //     "An AI-powered interview practice platform designed to help candidates prepare for interviews through AI-generated questions, voice interaction and real-time interview features.",
+  //   technologies: [
+  //     "React",
+  //     "TypeScript",
+  //     "AI",
+  //     "Speech-to-Text",
+  //     "Text-to-Speech",
+  //   ],
+  //   image: "/Image/GRFI.png",
+  //   github: "#",
+  //   live: "#",
+  //   status: "Featured Project",
+  // },
+
+  {
+    category: "React / TypeScript / Firebase",
+    title: "Trackly — AI Job Tracker",
+    description:
+      "An AI-powered job application tracker with a responsive dashboard, Firebase authentication, Firestore data storage and AI-assisted features for managing the job search process.",
+    technologies: [
+      "React",
+      "TypeScript",
+      "Firebase",
+      "Firestore",
+      "AI",
+      "Shadcn UI",
+    ],
+    image:
+      "https://github.com/user-attachments/assets/2529f58d-bff9-4bc9-a630-afed45676edc",
+    github:
+      "https://github.com/preethikasuburamani/AI-Powered-Job-Tracker",
+    live: "https://ai-powered-job-tracker-fawn.vercel.app/",
+    status: "Live Project",
+  },
+
+  {
+    category: "React / Redux / REST API",
+    title: "ShopHub — E-Commerce Application",
+    description:
+      "A responsive e-commerce application using React and Redux Toolkit, integrating REST APIs for product data with product filtering, cart management and reusable UI components.",
+    technologies: [
+      "React",
+      "JavaScript",
+      "Redux Toolkit",
+      "REST API",
+      "CSS",
+    ],
+    image:
+      "https://github.com/user-attachments/assets/597a9109-250f-4148-8135-c176eaf22783",
+    github: "https://github.com/preethikasuburamani/ShopHub",
+    live: "https://shop-hub-lime.vercel.app/",
+    status: "Live Project",
+  },
+
+  {
+    category: "React / Dashboard / Data Visualisation",
+    title: "Telecom Call Analysis Dashboard",
+    description:
+      "A responsive analytics dashboard for monitoring call records, activity, customer engagement, success rates, call costs and calling patterns through data visualisation.",
+    technologies: [
+      "React",
+      "JavaScript",
+      "Tailwind CSS",
+      "Shadcn UI",
+      "Recharts",
+    ],
+    image:
+      "https://github.com/user-attachments/assets/51dc65da-c221-40ee-b0b4-e34ef65e7cf3",
+    github:
+      "https://github.com/preethikasuburamani/Telecom-Call-Dashboard",
+    live: "https://telecom-call-dashboard.vercel.app/",
+    status: "Live Project",
+  },
+
+  {
+  category: "React / JavaScript / SASS",
+  title: "TaskFlow — Task Management App",
+  description:
+    "A responsive task management application that allows users to create, edit, complete and delete tasks through a clean and intuitive interface. Built with reusable React components and interactive state management.",
+  technologies: [
+    "React",
+    "JavaScript",
+    "SASS",
+    "HTML5",
+    "CSS3",
+  ],
+  image:
+    "https://github.com/user-attachments/assets/2b3d1460-6f12-4260-91b6-121e99df9eb2",
+  github:
+    "https://github.com/preethikasuburamani/TODOList",
+  live:
+    "https://todo-list-silk-gamma-62.vercel.app/",
+  status: "Live Project",
+},
+];
 
 function Projects() {
   return (
     <Element name="projects" className="section projects-section">
-      <h2>Projects</h2>
 
-      <div className="project">
+      <div className="section-label">
+        SELECTED WORK
+      </div>
 
-        {/* Trackly */}
-        <div className="project-card">
-          <div className="project-image">
-            <img
-              src="https://github.com/user-attachments/assets/2529f58d-bff9-4bc9-a630-afed45676edc"
-              alt="Trackly Job Tracker"
-            />
-          </div>
+      <h2 className="section-title">
+        Projects that show what I can <span className="gradient-text">build</span>
+      </h2>
 
-          <div className="project-content">
-            <h2>Trackly [Job Tracker]</h2>
+      <p className="section-subtitle">
+        A selection of projects demonstrating React development,
+        API integration, responsive UI development and application logic.
+      </p>
 
-            <p className="tech-stack">
-              React, TypeScript, JavaScript, SASS/SCSS, AI, Shadcn
-            </p>
+      <div className="projects-container">
 
-            <p>
-              AI-powered job tracker using React, TypeScript, and Shadcn UI
-              with a responsive dashboard. Integrated Firebase for
-              authentication and real-time data storage. Added LLM-based AI
-              features to simplify and optimize job application management.
-            </p>
-          </div>
+        {projects.map((project, index) => (
+          <article
+            className={`project-card ${
+              project.featured ? "featured-project" : ""
+            }`}
+            key={project.title}
+          >
 
-          <div className="links">
-            <a
-              href="https://github.com/preethikasuburamani/AI-Powered-Job-Tracker"
-              target="_blank"
-              rel="noreferrer"
-              className="gitlink"
-            >
-              Code
-            </a>
+            <div className="project-image-wrapper">
 
-            <a
-              href="https://ai-powered-job-tracker-fawn.vercel.app/"
-              target="_blank"
-              rel="noreferrer"
-              className="livelink"
-            >
-              Live Demo
-            </a>
-          </div>
-        </div>
+              <img
+                src={project.image}
+                alt={project.title}
+                className="project-image"
+              />
 
+              <div className="image-overlay">
+                <span>{project.status}</span>
+              </div>
 
-        {/* ShopHub */}
-        <div className="project-card">
-          <div className="project-image">
-            <img
-              src="https://github.com/user-attachments/assets/597a9109-250f-4148-8135-c176eaf22783"
-              alt="ShopHub E-Commerce"
-            />
-          </div>
+            </div>
 
-          <div className="project-content">
-            <h2>E-Commerce SHOPHUB</h2>
+            <div className="project-content">
 
-            <p className="tech-stack">
-              React, JavaScript, CSS
-            </p>
+              <p className="project-category">
+                {project.category}
+              </p>
 
-            <p>
-              Developed a high-performance e-commerce interface with dynamic
-              product filtering and responsive UI.
-            </p>
-          </div>
+              <h3>{project.title}</h3>
 
-          <div className="links">
-            <a
-              href="https://github.com/preethikasuburamani/ShopHub"
-              target="_blank"
-              rel="noreferrer"
-              className="gitlink"
-            >
-              Code
-            </a>
+              <p className="project-description">
+                {project.description}
+              </p>
 
-            <a
-              href="https://shop-hub-lime.vercel.app/"
-              target="_blank"
-              rel="noreferrer"
-              className="livelink"
-            >
-              Live Demo
-            </a>
-          </div>
-        </div>
+              <div className="project-tech">
+                {project.technologies.map((technology) => (
+                  <span key={technology}>
+                    {technology}
+                  </span>
+                ))}
+              </div>
 
+              <div className="project-links">
 
-        {/* Telecom */}
-        <div className="project-card">
-          <div className="project-image">
-            <img
-              src="https://github.com/user-attachments/assets/51dc65da-c221-40ee-b0b4-e34ef65e7cf3"
-              alt="Telecom Call Analysis Dashboard"
-            />
-          </div>
+                {project.github !== "#" ? (
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="project-link primary-project-link"
+                  >
+                    GitHub ↗
+                  </a>
+                ) : (
+                  <span className="project-link disabled-link">
+                    GitHub
+                  </span>
+                )}
 
-          <div className="project-content">
-            <h2>Telecom Call Analysis</h2>
+                {project.live !== "#" ? (
+                  <a
+                    href={project.live}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="project-link secondary-project-link"
+                  >
+                    Live Demo ↗
+                  </a>
+                ) : (
+                  <span className="project-link disabled-link">
+                    Live Demo
+                  </span>
+                )}
 
-            <p className="tech-stack">
-              React, JavaScript, Tailwind CSS, Shadcn, Recharts
-            </p>
+              </div>
 
-            <p>
-              Developed analytics dashboards to monitor call records,
-              track call activity, analyze customer engagement, monitor
-              success rates, analyze call costs, and identify calling
-              patterns.
-            </p>
-          </div>
+            </div>
 
-          <div className="links">
-            <a
-              href="https://github.com/preethikasuburamani/Telecom-Call-Dashboard"
-              target="_blank"
-              rel="noreferrer"
-              className="gitlink"
-            >
-              Code
-            </a>
-
-            <a
-              href="https://telecom-call-dashboard.vercel.app/"
-              target="_blank"
-              rel="noreferrer"
-              className="livelink"
-            >
-              Live Demo
-            </a>
-          </div>
-        </div>
-
-
-        {/* TODO */}
-        <div className="project-card">
-          <div className="project-image">
-            <img
-              src= "https://github.com/user-attachments/assets/2b3d1460-6f12-4260-91b6-121e99df9eb2"
-              alt="TODO List Application"
-            />
-          </div>
-
-          <div className="project-content">
-            <h2>TODO List</h2>
-
-            <p className="tech-stack">
-              React, JavaScript, Sass
-            </p>
-
-            <p>
-              Built a task management application that allows users to add,
-              edit, and delete tasks with persistent state updates.
-              Showcases practical skills in DOM manipulation, event handling,
-              and clean UI design.
-            </p>
-          </div>
-
-          <div className="links">
-            <a
-              href="https://github.com/preethikasuburamani/TODOList"
-              target="_blank"
-              rel="noreferrer"
-              className="gitlink"
-            >
-              Code
-            </a>
-
-            <a
-              href="https://todo-list-silk-gamma-62.vercel.app/"
-              target="_blank"
-              rel="noreferrer"
-              className="livelink"
-            >
-              Live Demo
-            </a>
-          </div>
-        </div>
-
-
-        {/* NOVA */}
-        <div className="project-card">
-          <div className="project-image">
-            <img
-              src="https://github.com/user-attachments/assets/e33d161b-06a2-4318-8276-cecf636ee5cd"
-              alt="NOVA Static Website"
-            />
-          </div>
-
-          <div className="project-content">
-            <h2>NOVA Static Web Application</h2>
-
-            <p className="tech-stack">
-              HTML5, CSS3
-            </p>
-
-            <p>
-              A sleek and professional responsive website designed with a
-              modern dark theme and high-contrast UI, demonstrating skills
-              in web design and development.
-            </p>
-          </div>
-
-          <div className="links">
-            <a
-              href="https://github.com/preethikasuburamani/Black-and-White-responsive-cross-browser-compatible-interfaces"
-              target="_blank"
-              rel="noreferrer"
-              className="gitlink"
-            >
-              Code
-            </a>
-
-            <a
-              href="https://preethikasubramani.github.io/Black-and-White-responsive-cross-browser-compatible-interfaces/index.html"
-              target="_blank"
-              rel="noreferrer"
-              className="livelink"
-            >
-              Live Demo
-            </a>
-          </div>
-        </div>
-
-
-        {/* Weather */}
-        <div className="project-card">
-          <div className="project-image">
-            <img
-              src= "https://github.com/user-attachments/assets/0696b2ca-c4f5-4de7-819f-a7bac5ea9432"
-              alt="Weather Reporter Application"
-            />
-          </div>
-
-          <div className="project-content">
-            <h2>Weather Reporter</h2>
-
-            <p className="tech-stack">
-              React, JavaScript, Tailwind CSS
-            </p>
-
-            <p>
-              Developed a responsive weather application that retrieves
-              real-time weather data using an external API and displays
-              temperature and weather conditions dynamically.
-            </p>
-          </div>
-
-          <div className="links">
-            <a
-              href="https://github.com/preethikasuburamani/WeatherAPI"
-              target="_blank"
-              rel="noreferrer"
-              className="gitlink"
-            >
-              Code
-            </a>
-
-            <a
-              href="https://weather-api-five-virid.vercel.app/"
-              target="_blank"
-              rel="noreferrer"
-              className="livelink"
-            >
-              Live Demo
-            </a>
-          </div>
-        </div>
+          </article>
+        ))}
 
       </div>
+
+      <div className="projects-note">
+        <p>
+          More projects and experiments are available on my GitHub.
+        </p>
+
+        <a
+          href="https://github.com/preethikasuburamani/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          View GitHub →
+        </a>
+      </div>
+
     </Element>
   );
 }

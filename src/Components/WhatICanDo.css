@@ -1,0 +1,142 @@
+.what-section {
+  position: relative;
+}
+
+.section-label {
+  text-align: center;
+  color: var(--accent-light);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  margin-bottom: 15px;
+}
+
+.ability-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.ability-card {
+  position: relative;
+  padding: 30px;
+
+  min-height: 250px;
+
+  border: 1px solid var(--border);
+  border-radius: 14px;
+
+  background: linear-gradient(
+    145deg,
+    rgba(18, 24, 36, 0.8),
+    rgba(11, 15, 23, 0.8)
+  );
+
+  overflow: hidden;
+
+  transition:
+    transform 0.35s ease,
+    border-color 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+.ability-card::before {
+  content: "";
+  position: absolute;
+  width: 130px;
+  height: 130px;
+
+  top: -70px;
+  right: -70px;
+
+  border-radius: 50%;
+
+  background: rgba(124, 92, 255, 0.1);
+  filter: blur(30px);
+
+  transition: 0.4s ease;
+}
+
+.ability-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(124, 92, 255, 0.4);
+
+  box-shadow:
+    0 20px 50px rgba(0, 0, 0, 0.2),
+    0 0 30px rgba(124, 92, 255, 0.05);
+}
+
+.ability-card:hover::before {
+  transform: scale(2);
+}
+
+.ability-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 30px;
+}
+
+.ability-number {
+  color: var(--text-muted);
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.ability-icon {
+  width: 42px;
+  height: 42px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 10px;
+
+  color: var(--accent-light);
+  background: rgba(124, 92, 255, 0.1);
+
+  font-size: 1.1rem;
+}
+
+.ability-card h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.15rem;
+  margin-bottom: 12px;
+}
+
+.ability-card p {
+  color: var(--text-secondary);
+  line-height: 1.7;
+  font-size: 0.88rem;
+}
+
+.ability-line {
+  width: 0;
+  height: 2px;
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  background: var(--accent);
+
+  transition: 0.4s ease;
+}
+
+.ability-card:hover .ability-line {
+  width: 100%;
+}
+
+@media (max-width: 950px) {
+  .ability-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .ability-grid {
+    grid-template-columns: 1fr;
+  }
+}

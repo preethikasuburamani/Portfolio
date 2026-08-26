@@ -1,36 +1,105 @@
-// Skills.jsx
 import React from "react";
 import { Element } from "react-scroll";
-import "../App.css";
-import "./Skills.css"
+import "./Skills.css";
 
+const skillGroups = [
+  {
+    title: "Frontend Development",
+    description: "Technologies I use to build modern web interfaces.",
+    skills: [
+      "React",
+      "JavaScript",
+      "TypeScript",
+      "HTML5",
+      "CSS3",
+      "SASS / SCSS",
+      "Responsive Design",
+    ],
+  },
+  {
+    title: "State & Frameworks",
+    description: "Tools I use to structure and manage frontend applications.",
+    skills: [
+      "Redux Toolkit",
+      "React Hooks",
+      "Vite",
+      "Tailwind CSS",
+      "Shadcn UI",
+    ],
+  },
+  {
+    title: "API & Data",
+    description: "Working with external services and application data.",
+    skills: [
+      "REST APIs",
+      "JSON",
+      "Firebase",
+      "Firestore",
+      "SQL",
+      "Postman",
+      "CRUD",
+    ],
+  },
+  {
+    title: "Development Tools",
+    description: "Tools and practices used in my development workflow.",
+    skills: [
+      "Git",
+      "GitHub",
+      "Jira",
+      "Confluence",
+      "Agile",
+      "Scrum",
+      "Figma",
+    ],
+  },
+];
 
 function Skills() {
   return (
     <Element name="skills" className="section skills-section">
-      <h2>Skills</h2>
-      <div className="frontEnd">
-        <h1>  FrontEnd Development</h1>
-        <h3> <span>React</span> <span>JavaScript</span> <span>TypeScript</span> <span>SASS/SCSS</span><span>SQL</span> <span>SQL</span>
-          <span>HTML5</span> <span>CSS3</span> <span>Python</span> <span>Wordpress</span> </h3>
+
+      <div className="section-label">
+        TECHNICAL SKILLS
       </div>
 
-      <div className="framework">
-        <h1> Framework</h1> 
-        <h3> <span>Redux</span><span>TailWind css</span><span>Vite</span></h3>
+      <h2 className="section-title">
+        Tools I use to <span className="gradient-text">build</span>
+      </h2>
+
+      <p className="section-subtitle">
+        A practical toolkit built through projects, learning and
+        hands-on development experience.
+      </p>
+
+      <div className="skills-grid">
+
+        {skillGroups.map((group, index) => (
+          <div className="skill-card" key={group.title}>
+
+            <div className="skill-card-number">
+              0{index + 1}
+            </div>
+
+            <h3>{group.title}</h3>
+
+            <p className="skill-description">
+              {group.description}
+            </p>
+
+            <div className="skill-list">
+              {group.skills.map((skill) => (
+                <span key={skill}>
+                  {skill}
+                </span>
+              ))}
+            </div>
+
+          </div>
+        ))}
+
       </div>
 
-      <div className="others">
-        <h1>Version control / API</h1>
-        <h3><span>Git</span> <span>GitHub</span> <span>RestAPI</span> <span>JSON</span> 
-        <span>Postman</span> <span>CRUC</span></h3>
-      </div>
-
-      <div className="technical">
-        <h1>Technical Skills</h1>
-        <h3><span>Agile</span> <span>Scrum</span> <span>Jira</span> <span>Collaboration</span>
-        <span>Confluence</span></h3>
-      </div>
     </Element>
   );
 }

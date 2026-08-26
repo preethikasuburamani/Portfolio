@@ -1,64 +1,148 @@
-// About.jsx
 import React from "react";
 import { Element } from "react-scroll";
-import "./About.css"
+import "./About.css";
 
 function About() {
   return (
-    <Element name="about" className="about-sec">
-      <div className="section about-section">
-        <h2>About Me</h2>
-        <p>
-          Passionate React Developer with hands-on experience building E-commerce applications,
-          creating responsive and user-friendly interfaces. Proficient in HTML, CSS, JavaScript,
-          React, and familiar with backend technologies including Python, SQL, and core Java.
+    <Element name="about" className="section about-section">
+
+      <div className="about-header">
+        <div className="section-label">
+          ABOUT ME
+        </div>
+
+        <h2 className="section-title">
+          A developer who enjoys <span className="gradient-text">building</span>
+        </h2>
+
+        <p className="section-subtitle">
+          I enjoy turning ideas and designs into responsive, functional
+          web applications while continuously improving my frontend skills.
         </p>
       </div>
 
-      <div className="about-me">
-          <h1>My Journey</h1>
-          <p>
-            I began my journey by learning HTML, CSS, and JavaScript and gradually moved into building dynamic applications with React.
-            Through hands-on projects and professional internship experience, I focus on creating responsive, user-friendly 
-            web interfaces while continuously improving my development skills.
-          </p>
-      </div>
+      <div className="about-grid">
 
-      <div className="Exp-Edu">
-        <div className="Experience">
-          <h1>Experience</h1>
-          <div>
-            <p className="title">FrontEnd Developer Intern</p>
-            <p className="company">Tegasys Solutions UK Ltd,London</p>
-            <p className="year">Dec 2025 - present</p>
+        <div className="about-story">
+
+          <div className="about-card">
+
+            <div className="card-heading">
+              <span className="heading-icon">01</span>
+              <h3>My Journey</h3>
+            </div>
+
+            <p>
+              I started my development journey by learning HTML, CSS and
+              JavaScript and gradually moved into building dynamic
+              applications with React.
+            </p>
+
+            <p>
+              Through hands-on projects and professional experience, I have
+              developed an interest in creating responsive interfaces,
+              integrating APIs and building practical applications that
+              solve real problems.
+            </p>
+
+            <p>
+              I'm currently focused on growing as a Front-End Developer,
+              strengthening my React and TypeScript skills and learning
+              modern development practices.
+            </p>
+
           </div>
-          <div>
-            <p className="title">Dispatcher Part-time</p>
-            <p className="company">Innofinity Worldwide,Sloane Square, London</p>
-            <p className="year">May 2023 – April 2025</p>
-          </div>
+
         </div>
 
+        <div className="timeline">
 
-        <div className="Education">
-          <h1>Education</h1>
-          <div className="qualification">
-            <h1>Coding Diploma</h1>
-            <p className="uni"> bcs The Chartered Institute for IT ,UK</p>
-            <p className="year"> 2024-2025</p>
+          <div className="timeline-item">
+            <div className="timeline-dot"></div>
+
+            <div>
+              <span className="timeline-date">
+                Dec 2025 — Present
+              </span>
+
+              <h3>Front-End Developer Intern</h3>
+
+              <p className="timeline-company">
+                Tegasys Solutions UK Ltd · London
+              </p>
+
+              <p>
+                Working with frontend technologies to build and improve
+                web interfaces and develop practical development experience.
+              </p>
+            </div>
           </div>
 
-            <div className="qualification">
-            <h1>BBA</h1>
-            <p className="uni"> Thiruvalluvar University,India</p>
-            <p className="year"> 2019-2022</p>
-          </div>
          
 
+          <div className="timeline-item">
+            <div className="timeline-dot"></div>
+
+            <div>
+              <span className="timeline-date">
+                May 2023 — May 2024
+              </span>
+
+              <h3>Mobile Phone Tester</h3>
+
+              <p className="timeline-company">
+                Innofinity Worldwide, London, UK
+              </p>
+
+              <p>
+                Tested mobile devices, identified technical issues, documented defects,
+                and reported results accurately.
+              </p>
+            </div>
+          </div>
+
+        
+          <div className="timeline-item">
+            <div className="timeline-dot"></div>
+
+            <div>
+              <span className="timeline-date">
+                Jan 2024 — Dec 2025
+              </span>
+
+              <h3>Coding Diploma</h3>
+
+              <p className="timeline-company">
+                BCS, The Chartered Institute for IT · UK
+              </p>
+
+              <p>
+                Studied software development and strengthened my foundation
+                in programming and web development.
+              </p>
+            </div>
+          </div>
+
+          <div className="timeline-item">
+            <div className="timeline-dot"></div>
+
+            <div>
+              <span className="timeline-date">
+                Jan 2019 — Aug 2022
+              </span>
+
+              <h3>BBA</h3>
+
+              <p className="timeline-company">
+                Thiruvalluvar University · India
+              </p>
+            </div>
+          </div>
+
         </div>
 
       </div>
-      
+
     </Element>
   );
 }

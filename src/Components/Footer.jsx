@@ -1,24 +1,51 @@
-import React from 'react'
-import { FaGithub } from "react-icons/fa";
-import { CiLinkedin } from "react-icons/ci";
+import React from "react";
+import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
-import "./Footer.css"
+import "./Footer.css";
 
-const Footer = () => {
+function Footer() {
   return (
-    <div className='footer-box'>
-        <div>
-            <p> &copy; 2026 Preethika Subramani. All rights reserved.</p>
+    <footer className="footer-box">
+
+      <div className="footer-content">
+
+        <p>
+          © 2026 Preethika Subramani. Built with React.
+        </p>
+
+        <div className="social-link">
+
+          <a
+            href="https://github.com/preethikasuburamani/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub"
+          >
+            <FaGithub />
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/preethika-subramani/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+          >
+            <FaLinkedinIn />
+          </a>
+
+          <a
+            href="mailto:preethikasubramani02@gmail.com"
+            aria-label="Email"
+          >
+            <MdEmail />
+          </a>
 
         </div>
-        <div className='social-link'>
-            <a href="https://github.com/preethikasuburamani/" target='parent'><FaGithub /></a>
-            <a href="https://www.linkedin.com/in/preethika-subramani/" target='parent'><CiLinkedin /></a>
-            <a href='mailto:preethikasubramani02@gamil.com' target="parent"> <MdEmail /> </a>
-        </div>
 
-    </div>
-  )
+      </div>
+
+    </footer>
+  );
 }
 
-export default Footer
+export default Footer;

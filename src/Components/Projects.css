@@ -1,261 +1,32 @@
-/* =========================
-   Projects Section
-========================= */
-
 .projects-section {
-  padding: 5rem 2rem;
-  background-color: #0f172a;
-  color: #f8fafc;
-  text-align: center;
+  position: relative;
 }
 
-.projects-section > h2 {
-  font-size: 2.5rem;
-  margin-bottom: 3rem;
-}
-
-
-/* =========================
-   Project Grid
-========================= */
-
-.project {
-  max-width: 1200px;
-  margin: 0 auto;
-
+.projects-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
 }
-
-
-/* =========================
-   Project Card
-========================= */
 
 .project-card {
   position: relative;
 
-  background: rgba(255, 255, 255, 0.05);
-
-  border: 1px solid rgba(255, 255, 255, 0.1);
-
-  border-radius: 16px;
-
+  border: 1px solid var(--border);
+  border-radius: 15px;
+  background: rgba(14, 19, 29, 0.8);
   overflow: hidden;
 
-  display: flex;
-  flex-direction: column;
-
-  text-align: left;
-
-  backdrop-filter: blur(12px);
-
   transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease,
-    border-color 0.3s ease;
+    transform 0.4s ease,
+    border-color 0.4s ease,
+    box-shadow 0.4s ease;
 }
 
 
-/* Card Hover */
-
-.project-card:hover {
-  transform: translateY(-8px);
-
-  border-color: rgba(56, 189, 248, 0.4);
-
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
-}
-
-
-/* =========================
-   Project Thumbnail
-========================= */
-
-.project-image {
-  width: 100%;
-  height: 190px;
-
-  overflow: hidden;
-
-  background-color: #1e293b;
-}
-
-
-/* Image */
-
-.project-image img {
-  width: 100%;
-  height: 100%;
-
-  display: block;
-
-  object-fit: cover;
-
-  transition: transform 0.4s ease;
-}
-
-
-/* Image Zoom on Hover */
-
-.project-card:hover .project-image img {
-  transform: scale(1.05);
-}
-
-
-/* =========================
-   Project Content
-========================= */
-
-.project-content {
-  padding: 1.5rem;
-
-  flex: 1;
-}
-
-
-/* Project Title */
-
-.project-content h2 {
-  font-size: 1.35rem;
-
-  margin: 0 0 0.75rem;
-
-  color: #f8fafc;
-}
-
-
-/* Tech Stack */
-
-.project-content .tech-stack {
-  font-size: 0.9rem;
-
-  font-weight: 600;
-
-  color: #60a5fa;
-
-  margin-bottom: 1rem;
-}
-
-
-/* Description */
-
-.project-content p:last-child {
-  font-size: 0.95rem;
-
-  line-height: 1.6;
-
-  color: #cbd5e1;
-
-  margin: 0;
-}
-
-
-/* =========================
-   Links
-========================= */
-
-.links {
-  display: flex;
-
-  gap: 0.75rem;
-
-  padding: 0 1.5rem 1.5rem;
-}
-
-
-/* Both Buttons */
-
-.gitlink,
-.livelink {
-  flex: 1;
-
-  display: flex;
-
-  justify-content: center;
-  align-items: center;
-
-  padding: 0.65rem 1rem;
-
-  border-radius: 8px;
-
-  text-decoration: none;
-
-  font-weight: 600;
-
-  font-size: 0.9rem;
-
-  transition:
-    background-color 0.3s ease,
-    transform 0.2s ease;
-}
-
-
-/* GitHub Button */
-
-.gitlink {
-  background-color: #334155;
-
-  color: #f8fafc;
-}
-
-.gitlink:hover {
-  background-color: #475569;
-
-  transform: translateY(-2px);
-}
-
-
-/* Live Demo Button */
-
-.livelink {
-  background-color: #3b82f6;
-
-  color: white;
-}
-
-.livelink:hover {
-  background-color: #2563eb;
-
-  transform: translateY(-2px);
-}
-
-
-/* =========================
-   Tablet
-========================= */
-
-@media (max-width: 1000px) {
-  .project {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-
-/* =========================
-   Mobile
-========================= */
-
-@media (max-width: 650px) {
-  .projects-section {
-    padding: 4rem 1rem;
-  }
-
-  .projects-section > h2 {
-    font-size: 2rem;
-  }
-
-  .project {
-    grid-template-columns: 1fr;
-
-    max-width: 450px;
-  }
-
-  .project-image {
-    height: 210px;
-  }
-}
+/* =========================================
+   GLASS OVERLAY
+   Added only for hover animation
+========================================= */
 
 .project-card::before {
   content: "";
@@ -263,22 +34,399 @@
   position: absolute;
   inset: 0;
 
-  background: linear-gradient(
-    120deg,
-    transparent,
-    rgba(56, 189, 248, 0.2),
-    transparent
-  );
+  z-index: 1;
+
+  background: rgba(255, 255, 255, 0.04);
+
+
+  border-radius: 15px;
 
   opacity: 0;
 
-  transition: opacity 0.4s ease;
+  transition:
+    opacity 0.4s ease,
+    backdrop-filter 0.4s ease;
 
   pointer-events: none;
+}
+
+
+/* =========================================
+   GLASS SHINE
+========================================= */
+
+.project-card::after {
+  content: "";
+
+  position: absolute;
+
+  top: -100%;
+  left: -150%;
+
+  width: 70%;
+  height: 300%;
+
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.10),
+    transparent
+  );
+
+  transform: rotate(25deg);
+
+  opacity: 0;
 
   z-index: 2;
+
+  transition:
+    left 0.7s ease,
+    opacity 0.3s ease;
+
+  pointer-events: none;
 }
+
+
+/* =========================================
+   CARD HOVER
+   Existing hover + enhanced glow
+========================================= */
+
+.project-card:hover {
+  transform: translateY(-8px);
+
+  border-color: rgba(124, 92, 255, 0.35);
+
+  box-shadow:
+    0 25px 60px rgba(0, 0, 0, 0.25),
+    0 0 30px rgba(124, 92, 255, 0.05),
+    0 0 45px rgba(124, 92, 255, 0.08);
+}
+
+
+/* Show glass */
 
 .project-card:hover::before {
   opacity: 1;
+}
+
+
+/* Move glass shine across card */
+
+.project-card:hover::after {
+  left: 150%;
+  opacity: 1;
+}
+
+
+/* =========================================
+   FEATURED PROJECT
+   UNCHANGED
+========================================= */
+
+.featured-project {
+  grid-column: span 2;
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+}
+
+
+/* =========================================
+   PROJECT IMAGE
+========================================= */
+
+.project-image-wrapper {
+  position: relative;
+  height: 270px;
+  overflow: hidden;
+  background: #101621;
+}
+
+.featured-project .project-image-wrapper {
+  height: 100%;
+  min-height: 370px;
+}
+
+.project-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  transition: transform 0.6s ease;
+}
+
+
+/* =========================================
+   IMAGE ZOOM
+========================================= */
+
+.project-card:hover .project-image {
+  transform: scale(1.04);
+}
+
+
+/* =========================================
+   IMAGE OVERLAY
+   UNCHANGED
+========================================= */
+
+.image-overlay {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+
+  z-index: 4;
+}
+
+.image-overlay span {
+  display: inline-block;
+  padding: 7px 11px;
+  border-radius: 6px;
+  color: white;
+  background: rgba(8, 11, 18, 0.78);
+  backdrop-filter: blur(10px);
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+
+
+/* =========================================
+   PROJECT CONTENT
+========================================= */
+
+.project-content {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+
+  position: relative;
+  z-index: 3;
+}
+
+.project-category {
+  color: var(--accent-light);
+  text-transform: uppercase;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  margin-bottom: 12px;
+}
+
+.project-content h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.3;
+  margin-bottom: 15px;
+}
+
+.project-description {
+  color: var(--text-secondary);
+  line-height: 1.75;
+  font-size: 0.87rem;
+  margin-bottom: 22px;
+}
+
+
+/* =========================================
+   PROJECT TECH
+   UNCHANGED
+========================================= */
+
+.project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-bottom: 25px;
+}
+
+.project-tech span {
+  padding: 6px 9px;
+  border-radius: 5px;
+  color: #c4c9d5;
+  background: rgba(255, 255, 255, 0.035);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  font-size: 0.68rem;
+}
+
+
+/* =========================================
+   PROJECT LINKS
+========================================= */
+
+.project-links {
+  display: flex;
+  gap: 10px;
+  margin-top: auto;
+
+  position: relative;
+  z-index: 5;
+}
+
+.project-link {
+  padding: 10px 14px;
+  border-radius: 7px;
+  font-size: 0.78rem;
+  font-weight: 600;
+
+  transition:
+    transform 0.3s ease,
+    background 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+
+/* =========================================
+   PRIMARY BUTTON
+========================================= */
+
+.primary-project-link {
+  color: white;
+  background: var(--accent);
+}
+
+.primary-project-link:hover {
+  background: var(--accent-light);
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 8px 20px rgba(124, 92, 255, 0.25);
+}
+
+
+/* =========================================
+   SECONDARY BUTTON
+========================================= */
+
+.secondary-project-link {
+  color: white;
+  border: 1px solid var(--border);
+}
+
+.secondary-project-link:hover {
+  border-color: var(--accent);
+
+  background: rgba(124, 92, 255, 0.08);
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+/* =========================================
+   BUTTON SMOOTH SHINE
+========================================= */
+
+.project-link {
+  position: relative;
+  overflow: hidden;
+}
+
+.project-link::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: -120%;
+
+  width: 70%;
+  height: 100%;
+
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.18),
+    transparent
+  );
+
+  transform: skewX(-20deg);
+
+  transition: left 0.5s ease;
+
+  pointer-events: none;
+}
+
+.project-link:hover::before {
+  left: 140%;
+}
+
+
+/* =========================================
+   DISABLED LINK
+   UNCHANGED
+========================================= */
+
+.disabled-link {
+  opacity: 0.4;
+  border: 1px solid var(--border);
+  cursor: not-allowed;
+}
+
+
+/* =========================================
+   PROJECT NOTE
+   UNCHANGED
+========================================= */
+
+.projects-note {
+  text-align: center;
+  margin-top: 45px;
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+}
+
+.projects-note a {
+  display: inline-block;
+  margin-top: 10px;
+  color: var(--accent-light);
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.projects-note a:hover {
+  color: white;
+  transform: translateX(4px);
+}
+
+
+/* =========================================
+   RESPONSIVE
+   UNCHANGED
+========================================= */
+
+@media (max-width: 850px) {
+
+  .featured-project {
+    grid-column: span 1;
+    display: block;
+  }
+
+  .featured-project .project-image-wrapper {
+    min-height: 300px;
+  }
+
+}
+
+@media (max-width: 700px) {
+
+  .projects-container {
+    grid-template-columns: 1fr;
+  }
+
+  .project-image-wrapper {
+    height: 220px;
+  }
+
+  .project-content {
+    padding: 23px;
+  }
+
+  .project-content h3 {
+    font-size: 1.2rem;
+  }
+
 }

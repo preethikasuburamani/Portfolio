@@ -1,0 +1,89 @@
+.how-work-section {
+  position: relative;
+}
+
+.work-process {
+  position: relative;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 20px;
+}
+
+.work-step {
+  position: relative;
+
+  min-height: 220px;
+
+  padding: 30px;
+
+  border: 1px solid var(--border);
+  border-radius: 14px;
+
+  background: rgba(15, 20, 30, 0.65);
+
+  transition: 0.35s ease;
+}
+
+.work-step:hover {
+  transform: translateY(-7px);
+  border-color: rgba(124, 92, 255, 0.35);
+}
+
+.step-number {
+  width: 45px;
+  height: 45px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 9px;
+
+  background: rgba(124, 92, 255, 0.1);
+  border: 1px solid rgba(124, 92, 255, 0.2);
+
+  color: var(--accent-light);
+
+  font-size: 0.78rem;
+  font-weight: 700;
+
+  margin-bottom: 25px;
+
+  transition: 0.3s ease;
+}
+
+.work-step:hover .step-number {
+  background: var(--accent);
+  color: white;
+
+  transform: rotate(-5deg);
+}
+
+.step-content h3 {
+  font-family: "Poppins", sans-serif;
+
+  font-size: 1.15rem;
+
+  margin-bottom: 12px;
+}
+
+.step-content p {
+  color: var(--text-secondary);
+
+  font-size: 0.84rem;
+  line-height: 1.7;
+}
+
+@media (max-width: 900px) {
+  .work-process {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .work-process {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,27 +1,32 @@
-// App.jsx
 import React from "react";
-import "./App.css"
+import "./App.css";
+
+import Navbar from "./Components/Navbar";
 import Home from "./Components/Home";
+import WhatICanDo from "./Components/WhatICanDo";
 import About from "./Components/About";
 import Skills from "./Components/Skills";
 import Projects from "./Components/Projects";
+import HowIWork from "./Components/HowIWork";
 import Contact from "./Components/Contact";
-import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
-
 
 function App() {
   return (
     <div className="App">
-      <Navbar/>
+      <Navbar />
+
       <main>
-       <Home/>
-       <About/>
-       <Skills/>
-       <Projects/>
-       <Contact/>
+        <Home />
+        <WhatICanDo />
+        <About />
+        <Skills />
+        <Projects />
+        <HowIWork />
+        <Contact />
       </main>
-      <Footer/>
+
+      <Footer />
     </div>
   );
 }
