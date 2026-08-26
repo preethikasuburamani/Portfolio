@@ -63,9 +63,8 @@ function Home() {
           >
             Let's Connect
           </button>
-
           <a
-            href="/CV/Resume.pdf"
+            href={`${import.meta.env.BASE_URL}CV/Resume.pdf`}
             target="_blank"
             rel="noopener noreferrer"
             className="cv-btn"
