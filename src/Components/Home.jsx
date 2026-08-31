@@ -31,13 +31,13 @@ function Home() {
 
         <div className="availability">
           <span></span>
-          Open to Junior Front-End Opportunities
+          Open to Front-End Opportunities
         </div>
 
         <p className="hello">Hello, I'm Preethika 👋</p>
 
         <h1>
-          Junior Front-End Developer
+          Front-End Developer
           <br />
           <span className="gradient-text">Specialising in React</span>
         </h1>

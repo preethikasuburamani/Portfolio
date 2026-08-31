@@ -85,7 +85,7 @@ function About() {
 
             <div>
               <span className="timeline-date">
-                May 2023 — May 2024
+                May 2023 — May 2025
               </span>
 
               <h3>Mobile Phone Tester</h3>

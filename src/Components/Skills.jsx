@@ -14,6 +14,9 @@ const skillGroups = [
       "CSS3",
       "SASS / SCSS",
       "Responsive Design",
+      "Wordpress",
+      "CMS",
+      "Themes, Plugins, ACF, Basic PHP",
     ],
   },
   {
