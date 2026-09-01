@@ -3,24 +3,24 @@ import { Element } from "react-scroll";
 import "./Projects.css";
 
 const projects = [
-  // {
-  //   featured: true,
-  //   category: "AI / React / TypeScript",
-  //   title: "GRFI — AI Interview Practice Platform",
-  //   description:
-  //     "An AI-powered interview practice platform designed to help candidates prepare for interviews through AI-generated questions, voice interaction and real-time interview features.",
-  //   technologies: [
-  //     "React",
-  //     "TypeScript",
-  //     "AI",
-  //     "Speech-to-Text",
-  //     "Text-to-Speech",
-  //   ],
-  //   image: "/Image/GRFI.png",
-  //   github: "#",
-  //   live: "#",
-  //   status: "Featured Project",
-  // },
+  {
+    featured: true,
+    category: "AI / React / TypeScript",
+    title: "GRFI — AI Interview Practice Platform",
+    description:
+      "An AI-powered interview practice platform designed to help candidates prepare for interviews through AI-generated questions, voice interaction and real-time interview features.",
+    technologies: [
+      "React",
+      "TypeScript",
+      "AI",
+      "Speech-to-Text",
+      "Text-to-Speech",
+    ],
+    image: "https://github.com/user-attachments/assets/99e5d5e9-388b-4e84-8672-5c2c385d9524",
+    github: "https://github.com/preethikasuburamani/GRFI",
+    live: "https://grfi-hyclapp6d-preethikas-projects-749b9ea0.vercel.app/",
+    status: "Featured Project",
+  },
 
   {
     category: "React / TypeScript / Firebase",
