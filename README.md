@@ -14,6 +14,9 @@ This portfolio highlights my work, technical skills, and projects in one place. 
 <img width="1895" height="931" alt="Screenshot (370)" src="https://github.com/user-attachments/assets/a4842d54-7242-4193-b269-496b7f0398be" />
 
 
+<img width="1200" height="798" alt="image" src="https://github.com/user-attachments/assets/ad5f9c9c-9c90-43a8-be96-b83785cb534b" />
+
+
 ## Tech Stack
 * HTML
 * CSS
