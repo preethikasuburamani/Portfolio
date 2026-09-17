@@ -11,9 +11,6 @@ Link:https://portfolio-rose-xi-85.vercel.app/
 This portfolio highlights my work, technical skills, and projects in one place. It is designed to give a quick overview of who I am and what I build, with a focus on simple design and smooth user experience.
 
 ## Screenshots
-<img width="1895" height="931" alt="Screenshot (370)" src="https://github.com/user-attachments/assets/a4842d54-7242-4193-b269-496b7f0398be" />
-
-
 <img width="1200" height="798" alt="image" src="https://github.com/user-attachments/assets/ad5f9c9c-9c90-43a8-be96-b83785cb534b" />
 
 
